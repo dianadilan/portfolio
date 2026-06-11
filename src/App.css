@@ -675,3 +675,305 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+/* ============================= */
+/* MOBILE RESPONSIVE FIXES */
+/* ============================= */
+
+@media (max-width: 600px) {
+  .page {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px;
+    border-radius: 28px;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  .navLinks {
+    gap: 18px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 64px 10px 70px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+  }
+
+  .heroText {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+    max-width: 230px;
+    justify-content: center;
+  }
+
+  .section {
+    margin-bottom: 70px;
+  }
+
+  .aboutSection,
+  .contactSection {
+    padding: 34px 24px;
+    border-radius: 34px;
+  }
+
+  .aboutSection h2,
+  .contactTitle {
+    font-size: 30px;
+    line-height: 1.05;
+  }
+
+  .aboutSection p,
+  .contactSection p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .projectGrid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .projectCard {
+    padding: 34px 24px;
+    min-height: auto;
+    border-radius: 30px;
+  }
+
+  .projectCard h3 {
+    font-size: 28px;
+    line-height: 1.05;
+  }
+
+  .projectCard p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .contactLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactLinks a {
+    width: 100%;
+    max-width: 220px;
+    justify-content: center;
+  }
+}
+
+/* ============================= */
+/* MOBILE CASE PAGES */
+/* Doze + Klimatlär */
+/* ============================= */
+
+@media (max-width: 600px) {
+  .casePage {
+    padding: 18px 14px;
+  }
+
+  .backLink {
+    margin: 12px 0 55px;
+    font-size: 14px;
+  }
+
+  .caseHero {
+    margin-bottom: 55px;
+  }
+
+  .caseHero h1 {
+    font-size: 34px;
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+  }
+
+  .caseHero p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .caseInfo,
+  .caseMeta,
+  .processGrid,
+  .decisionGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 70px;
+  }
+
+  .caseInfo div,
+  .caseMeta div,
+  .processGrid div,
+  .decisionGrid div {
+    padding: 26px 22px;
+    border-radius: 28px;
+  }
+
+  .caseSection {
+    margin-bottom: 75px;
+  }
+
+  .caseSection h2 {
+    font-size: 32px;
+    line-height: 1.05;
+    letter-spacing: -0.05em;
+  }
+
+  .caseSection > p:not(.eyebrow) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .screenGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .screenGrid img {
+    max-width: 285px;
+    border-radius: 28px;
+  }
+
+  .designSystemGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .designSystemGrid img {
+    max-width: 100%;
+  }
+
+  .goalTreeWrapper img {
+    max-width: 100%;
+    border-radius: 24px;
+  }
+
+  .projectLinks {
+    flex-direction: column;
+  }
+
+  .projectLinks a {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+/* FORCE MOBILE RESPONSIVE FIX */
+
+@media (max-width: 600px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  .page,
+  .casePage {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px;
+    margin: 0 auto;
+    border-left: none;
+    border-right: none;
+  }
+
+  .caseInfo,
+  .caseMeta,
+  .processGrid,
+  .decisionGrid,
+  .projectGrid,
+  .screenGrid,
+  .designSystemGrid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .screenGrid img {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .caseHero h1,
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.05;
+  }
+}
+/* MOBILE HEADER - ONLY NAME */
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 16px 18px 14px;
+    border-radius: 26px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logoImage {
+    display: none;
+  }
+
+  .logo span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1;
+  }
+
+  .navLinks {
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+    font-size: 12px;
+  }
+
+  .navLinks a {
+    padding: 6px 4px;
+  }
+
+  .hero {
+    margin-top: 38px;
+    padding-top: 0;
+  }
+}
