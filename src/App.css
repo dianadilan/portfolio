@@ -977,3 +977,9 @@ h2 {
     padding-top: 0;
   }
 }
+@media (max-width: 600px) {
+  .hero h1 {
+    color: var(--text) !important;
+    -webkit-text-fill-color: var(--text) !important;
+  }
+}
