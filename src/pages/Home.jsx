@@ -1,17 +1,12 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/Logga_Portfolio1.png'
 
 function Home() {
   return (
     <main className="page">
       <nav className="navbar">
-        <div className="logo">
-          <img
-            src={logo}
-            alt="Diana Dilan logo"
-            className="logoImage"
-          />
-          <span>Diana Dilan</span>
+        <div className="monogramLogo" aria-label="Diana Dilan logo">
+          <span>D</span>
+          <span>D</span>
         </div>
 
         <div className="navLinks">
@@ -94,11 +89,14 @@ function Home() {
 
           <article className="projectCard disabledCard">
             <span>WordPress · Web Development</span>
+
             <h3>Custom WordPress Website</h3>
+
             <p>
               A custom WordPress project currently being prepared for
               publication.
             </p>
+
             <div className="comingSoon">Coming Soon</div>
           </article>
         </div>

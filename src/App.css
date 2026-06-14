@@ -999,3 +999,60 @@ h2 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+.logo,
+.logoImage {
+  display: none;
+}
+
+.monogramLogo {
+  position: relative;
+  width: 86px;
+  height: 58px;
+  color: var(--rose-dark);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.monogramLogo span {
+  position: absolute;
+  top: 0;
+  font-size: 62px;
+  line-height: 0.9;
+  letter-spacing: -0.18em;
+}
+
+.monogramLogo span:first-child {
+  left: 0;
+}
+
+.monogramLogo span:last-child {
+  left: 34px;
+  transform: scaleX(-1);
+}
+
+.navbar {
+  padding: 18px 34px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    max-width: 340px;
+    padding: 14px 18px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .monogramLogo {
+    width: 72px;
+    height: 48px;
+  }
+
+  .monogramLogo span {
+    font-size: 52px;
+  }
+
+  .monogramLogo span:last-child {
+    left: 28px;
+  }
+}
