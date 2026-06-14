@@ -92,13 +92,14 @@ function Home() {
             </p>
           </Link>
 
-          <article className="projectCard">
+          <article className="projectCard disabledCard">
             <span>WordPress · Web Development</span>
             <h3>Custom WordPress Website</h3>
             <p>
-              A complete website built and customized from structure and design
-              to coded implementation and local development setup.
+              A custom WordPress project currently being prepared for
+              publication.
             </p>
+            <div className="comingSoon">Coming Soon</div>
           </article>
         </div>
       </section>

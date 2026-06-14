@@ -983,3 +983,19 @@ h2 {
     -webkit-text-fill-color: var(--text) !important;
   }
 }
+.disabledCard {
+  opacity: 0.9;
+}
+
+.comingSoon {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(143, 63, 85, 0.12);
+  color: var(--rose-dark);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
